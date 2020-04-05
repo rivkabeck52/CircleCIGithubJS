@@ -10,9 +10,5 @@
   },
   "scripts": {
     "test": "mocha --no-timeouts \"test/original-example.test.js\""
-  },
-  "license": "ISC",
-  "engines": {
-    "node": ">=8.9.0"
   }
 }
