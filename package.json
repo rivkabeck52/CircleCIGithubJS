@@ -1,0 +1,18 @@
+{
+  "name": "tutorial-selenium-javascript-basic",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "@applitools/eyes-selenium": "^4.33.21",
+    "chromedriver": "^80.0.0",
+    "mocha": "^6.2.2",
+    "selenium-webdriver": "^3.6.0"
+  },
+  "scripts": {
+    "test": "mocha --no-timeouts \"test/original-example.test.js\""
+  },
+  "license": "ISC",
+  "engines": {
+    "node": ">=8.9.0"
+  }
+}
