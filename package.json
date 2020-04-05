@@ -6,7 +6,7 @@
     "@applitools/eyes-selenium": "^4.33.21",
     "chromedriver": "^80.0.0",
     "mocha": "^6.2.2",
-    "selenium-webdriver": "^3.6.0"
+    "selenium-webdriver": "^4.0.0-alpha.7"
   },
   "scripts": {
     "test": "mocha --no-timeouts \"test/original-example.test.js\""

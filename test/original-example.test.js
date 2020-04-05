@@ -12,7 +12,13 @@ describe('DemoApp - Original', function () {
     eyes = new Eyes();
 
     // Add your API key (the API key can be set via APPLITOOLS_API_KEY env variable
+    eyes.setApiKey(process.env.APPLITOOLS_API_KEY)
 
+    var batchName =  null;
+    var batchId   = process.env.APPLITOOLS_BATCH_ID;
+
+    //  set the batch
+    eyes.setBatch(batchName,batchId,0);
     // Use Chrome browser
     driver = await new Builder()
       .withCapabilities(Capabilities.chrome())
