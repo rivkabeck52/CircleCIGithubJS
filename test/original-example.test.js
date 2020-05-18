@@ -14,7 +14,8 @@ describe('DemoApp - Original', function () {
     // Add your API key (the API key can be set via APPLITOOLS_API_KEY env variable
     eyes.setApiKey(process.env.APPLITOOLS_API_KEY)
 
-    var batchName =  null;
+    var batchName =  process.env.APPLITOOLS_BATCH_NAME;
+    
     var batchId   = process.env.APPLITOOLS_BATCH_ID;
 
     //  set the batch
@@ -50,3 +51,4 @@ describe('DemoApp - Original', function () {
     await eyes.abortIfNotClosed();
   });
 });
+
