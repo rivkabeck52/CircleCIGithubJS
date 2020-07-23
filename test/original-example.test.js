@@ -15,8 +15,14 @@ describe('DemoApp - Original', function () {
     eyes.setApiKey(process.env.APPLITOOLS_API_KEY)
 
     var batchName =  process.env.APPLITOOLS_BATCH_NAME;
-    
+
     var batchId   = process.env.APPLITOOLS_BATCH_ID;
+
+    var parentBranchName = process.env.APPLITOOLS_PARENT_BRANCH_NAME;
+    var branchName = process.env.APPLITOOLS_BRANCH_NAME;
+
+    console.log("parent branch name is: " + parentBranchName);
+    console.log("branch name is: " + branchName);
 
     //  set the batch
     eyes.setBatch(batchName,batchId,0);
@@ -26,6 +32,8 @@ describe('DemoApp - Original', function () {
       .build();
   });
 
+
+  
   it('Smoke Test', async () => {
     // Start the test and set the App name, the Test name and the browser's viewport size to 800x600.
     await eyes.open(driver, 'DemoApp - Original', 'Smoke Test', { width: 800, height: 600});
