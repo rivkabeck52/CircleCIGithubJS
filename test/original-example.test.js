@@ -16,7 +16,9 @@ describe('DemoApp - Original', function () {
 
     var batchName =  process.env.APPLITOOLS_BATCH_NAME;
 
-    
+  
+
+
 
     var batchId   = process.env.APPLITOOLS_BATCH_ID;
 
