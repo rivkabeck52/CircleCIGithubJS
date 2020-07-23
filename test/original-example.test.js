@@ -18,6 +18,8 @@ describe('DemoApp - Original', function () {
 
     var batchId   = process.env.APPLITOOLS_BATCH_ID;
 
+    
+
     //  set the batch
     eyes.setBatch(batchName,batchId,0);
     // Use Chrome browser
