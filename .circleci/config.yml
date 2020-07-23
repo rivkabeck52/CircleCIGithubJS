@@ -21,6 +21,4 @@ jobs:
           command: |
             export APPLITOOLS_BATCH_ID=${CIRCLE_SHA1}
             echo $APPLITOOLS_BATCH_ID
-            echo $APPLITOOLS_PARENT_BRANCH_NAME
-            echo $APPLITOOLS_PARENT_BRANCH
             npm test

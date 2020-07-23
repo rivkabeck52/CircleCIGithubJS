@@ -18,6 +18,12 @@ describe('DemoApp - Original', function () {
 
     var batchId   = process.env.APPLITOOLS_BATCH_ID;
 
+    var parentBranchName = process.env.APPLITOOLS_PARENT_BRANCH_NAME;
+    var branchName = process.env.APPLITOOLS_BRANCH_NAME;
+
+    console.log("parent branch name is: " + parentBranchName);
+    console.log("branch name is: " + branchName);
+
     //  set the batch
     eyes.setBatch(batchName,batchId,0);
     // Use Chrome browser
